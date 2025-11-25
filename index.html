@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda | Leger Nilai Online</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <i class="fas fa-graduation-cap"></i>
+        <h1>PDF ELL FIRDAUS</h1>
+      </div>
+
+      <nav>
+        <ul id="nav-menu">
+          <li><a href="index.html" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+          <li><a href="leger-diniyah.html"><i class="fas fa-chart-bar"></i> Leger Diniyah</a></li>
+          <li><a href="leger-formal.html"><i class="fas fa-chart-bar"></i> Leger Formal</a></li>
+          <li><a href="data-santri.html"><i class="fas fa-users"></i> Data Santri</a></li>
+          <li><a href="#"><i class="fas fa-user-circle"></i> Profil</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="container" style="text-align:center; margin-top:40px;">
+    <h2 class="page-title">Selamat Datang</h2>
+    <p style="max-width:700px; margin:0 auto; font-size:1.1rem; color:#444;">
+      Sistem <b>Leger Nilai Online</b> membantu guru dalam menginput nilai, mengatur kelas,
+      dan mengelola data santri dengan cepat dan mudah.
+    </p>
+  </section>
+
+  <!-- MENU UTAMA -->
+  <section class="container" style="margin-top:40px;">
+    <div style="
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+      gap:20px;">
+      
+      <a href="leger-diniyah.html" class="box" style="text-align:center; padding:30px; cursor:pointer;">
+        <i class="fas fa-book fa-3x" style="color:var(--primary);"></i>
+        <h3 style="margin-top:15px;">Leger Diniyah</h3>
+        <p>Input dan kelola nilai pelajaran diniyah.</p>
+      </a>
+
+      <a href="leger-formal.html" class="box" style="text-align:center; padding:30px; cursor:pointer;">
+        <i class="fas fa-chart-line fa-3x" style="color:var(--primary);"></i>
+        <h3 style="margin-top:15px;">Leger Formal</h3>
+        <p>Manage nilai pelajaran formal.</p>
+      </a>
+
+      <a href="data-santri.html" class="box" style="text-align:center; padding:30px; cursor:pointer;">
+        <i class="fas fa-users fa-3x" style="color:var(--primary);"></i>
+        <h3 style="margin-top:15px;">Data Santri</h3>
+        <p>Kelola data santri dan kelas formal.</p>
+      </a>
+
+      <a href="profil.html" class="box" style="text-align:center; padding:30px; cursor:pointer;">
+        <i class="fas fa-user-circle fa-3x" style="color:var(--primary);"></i>
+        <h3 style="margin-top:15px;">Profil</h3>
+        <p>Informasi akun dan pengaturan pengguna.</p>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2023 Leger Nilai Online. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Menu responsive
+    document.getElementById('hamburger').addEventListener('click', function () {
+      document.getElementById('nav-menu').classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>
